@@ -1,0 +1,63 @@
+.card {
+  height: 87px;
+  width: 560px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.card:hover {
+  transition: 0.5s;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 42px -12px rgba(0, 0, 0, 0.25);
+}
+
+.status {
+  height: 87px;
+  width: 4px;
+  background: #03b898;
+  border-radius: 4px 0px 0px 4px;
+  position: absolute;
+}
+
+.cardInfos {
+  margin-left: 24px;
+}
+
+.cardNome {
+  margin-top: 8px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+}
+
+.cardTipo {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 12px;
+  color: #5b6166;
+}
+
+.cardValor {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 12px;
+  color: #212529;
+  margin-top: 18px;
+}
+
+.cardDeletar {
+  height: 22px;
+  width: 22px;
+  border-radius: 2.5px;
+  background: #e9ecef;
+  border: none;
+  margin-right: 13px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

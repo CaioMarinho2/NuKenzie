@@ -1,0 +1,128 @@
+#aside {
+  margin-right: 100px;
+  margin-top: 60px;
+}
+
+#form {
+  width: 380px;
+  height: 385px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#descrição {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #212529;
+}
+
+#inputDescrição {
+  height: 53px;
+  width: 314px;
+  border-radius: 8px;
+  border: none;
+  background: #f8f9fa;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #868e96;
+  padding-left: 16px;
+}
+
+#inputDescrição:focus {
+  transition: 0.7s;
+
+  background: #ffffff;
+}
+
+#inputDescrição::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #868e96;
+}
+#inputDescrição:focus::placeholder {
+  transition: 0.3s;
+  color: transparent;
+}
+
+#Exemplo {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #868e96;
+}
+
+#valorSection {
+  display: flex;
+}
+
+#inserirValor {
+  height: 48px;
+  width: 108px;
+  border-radius: 8px;
+  background: #f8f9fa;
+  margin-right: 76px;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+#valorNumerico {
+  height: 30px;
+  width: 90px;
+  padding-left: 5px;
+  border: none;
+  background: #f8f9fa;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #868e96;
+}
+
+#valorNumerico:focus {
+  outline: none;
+}
+
+#cifrão {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #5b6166;
+}
+
+#selecionar {
+  height: 48px;
+  width: 150px;
+  border-radius: 8px;
+  border: none;
+  background: #f8f9fa;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #5b6166;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+#submit {
+  margin-top: 25px;
+  width: 314px;
+  height: 48px;
+  background: #fd377e;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+#submit:hover {
+  background: #e34981;
+}
+.valorInfos{
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    color: #212529;
+}

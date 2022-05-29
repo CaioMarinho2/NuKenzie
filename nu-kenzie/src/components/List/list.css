@@ -1,0 +1,49 @@
+#resumoFinanceiro {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 20px;
+  color: #212529;
+}
+
+#areaFiltros {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 560px;
+  height: 87px;
+}
+
+#seçãoFiltros {
+  margin-top: 60px;
+}
+#todos {
+  background: #fd377e;
+  color: #ffffff;
+}
+.filtro {
+  width: 87px;
+  height: 40px;
+  background: #e9ecef;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 16px;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 14px;
+  color: #5b6166;
+}
+
+#lista {
+  list-style: none;
+  padding-left: 0;
+}
+
+#semLançamento {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #5b6166;
+  margin-bottom: 35px;
+}
