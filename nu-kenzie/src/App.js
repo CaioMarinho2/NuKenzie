@@ -8,6 +8,8 @@ import Logo from "./Images/logo.png";
 function App() {
   const [login, setLogin] = useState(false);
   const [listTransactions, setListTransactions] = useState([]);
+  const [listTransactions2, setListTransactions2] = useState([]);
+
   function Logar() {
     document.body.style.backgroundColor = "#ffffff";
 
@@ -20,8 +22,38 @@ function App() {
 
   function addlistTransactions(newTransition) {
     setListTransactions([...listTransactions, newTransition]);
+    setListTransactions2([...listTransactions, newTransition]);
   }
-  console.log(listTransactions);
+
+  function removerOperação(id) {
+    const remove = listTransactions.filter((item) => {
+      return item.id !== id.id;
+    });
+    const remove2 = listTransactions2.filter((item) => {
+      return item.id !== id.id;
+    });
+    setListTransactions([...remove]);
+    setListTransactions2([...remove2]);
+  }
+
+
+
+
+  function Filtrotodos() {
+    setListTransactions(listTransactions2);
+  }
+  function FiltroEntradas() {
+    const filtroEntradas = listTransactions2.filter(
+      ({ type }) => type === "Entrada"
+    );
+    return setListTransactions(filtroEntradas);
+  }
+  function FiltroDespesas() {
+    const FiltroDespesas = listTransactions2.filter(
+      ({ type }) => type === "Despesa"
+    );
+    return setListTransactions(FiltroDespesas);
+  }
 
   return login ? (
     <div className="App">
@@ -38,7 +70,13 @@ function App() {
             listTransactions={listTransactions}
           />
         </aside>
-        <List listTransactions={listTransactions} />
+        <List
+          listTransactions={listTransactions}
+          removerOperação={removerOperação}
+          FiltroEntradas={FiltroEntradas}
+          FiltroDespesas={FiltroDespesas}
+          Filtrotodos={Filtrotodos}
+        />
       </main>
     </div>
   ) : (

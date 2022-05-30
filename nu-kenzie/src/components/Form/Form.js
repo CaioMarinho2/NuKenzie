@@ -3,12 +3,17 @@ import "./form.css";
 import TotalMoney from "../TotalMoney/TotalMoney";
 
 function Form({ addlistTransactions, listTransactions }) {
+  const [id, setId] = useState(0);
+  function newId() {
+    return setId(id + 1);
+  }
+
   const [operação, setOperação] = useState({
     description: "",
     type: "Entrada",
     value: 0,
   });
-  console.log(operação);
+
   if (listTransactions.length !== 0) {
     return (
       <>
@@ -16,6 +21,7 @@ function Form({ addlistTransactions, listTransactions }) {
           id="form"
           onSubmit={(event) => {
             event.preventDefault();
+
             addlistTransactions(operação);
           }}
         >
@@ -66,7 +72,14 @@ function Form({ addlistTransactions, listTransactions }) {
               </div>
             </div>
           </div>
-          <button id="submit" type="submit">
+          <button
+            id="submit"
+            type="submit"
+            onClick={() => {
+              newId();
+              setOperação({ ...operação, id: id });
+            }}
+          >
             Inserir valor
           </button>
         </form>
@@ -80,6 +93,7 @@ function Form({ addlistTransactions, listTransactions }) {
           id="form"
           onSubmit={(event) => {
             event.preventDefault();
+
             addlistTransactions(operação);
           }}
         >
@@ -130,7 +144,14 @@ function Form({ addlistTransactions, listTransactions }) {
               </div>
             </div>
           </div>
-          <button id="submit" type="submit">
+          <button
+            id="submit"
+            type="submit"
+            onClick={() => {
+              newId();
+              setOperação({ ...operação, id: id });
+            }}
+          >
             Inserir valor
           </button>
         </form>

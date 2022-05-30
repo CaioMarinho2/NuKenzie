@@ -16,9 +16,19 @@
 #seçãoFiltros {
   margin-top: 60px;
 }
-#todos {
+.filtroSelecionado {
+  transition: 0.3s;
   background: #fd377e;
   color: #ffffff;
+  width: 87px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 16px;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 14px;
 }
 .filtro {
   width: 87px;

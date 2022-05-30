@@ -1,7 +1,6 @@
 import "./totalMoney.css";
 
 function TotalMoney({ listTransactions }) {
-    
   const entradas = listTransactions.filter(({ type }) => {
     return type === "Entrada";
   });
@@ -24,7 +23,7 @@ function TotalMoney({ listTransactions }) {
         <p id="valorTotal">Valor total:</p>
         <p id="explicaçãoSaldo">O valor se refere ao saldo </p>
       </div>
-      <span id="valorDinheiro">${entradasValor-despesaValor}</span>
+      <span id="valorDinheiro">${entradasValor - despesaValor}</span>
     </div>
   );
 }
