@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 }
 #logoEscuro {
   height: 20px;
@@ -25,6 +26,20 @@
 }
 #appMain {
   display: flex;
-  min-height: 100vh;
   justify-content: center;
+}
+
+@media(max-width:912px){
+  #appMain{
+    flex-direction: column;
+  }
+  #Header{
+    width: 100vh;
+  }
+  #aside{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100vh;
+  }
 }

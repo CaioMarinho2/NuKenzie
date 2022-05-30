@@ -10,9 +10,9 @@ function Card({ description, type, value, removerOperação, id }) {
   }
 
   return (
-    <>
-      <span className={cardClass()}></span>
+  
       <li className="card">
+      <span className={cardClass()}></span>
         <div className="cardInfos">
           <h2 className="cardNome">{description}</h2>
           <p className="cardTipo">{type}</p>
@@ -22,7 +22,7 @@ function Card({ description, type, value, removerOperação, id }) {
           <FaTrash />
         </button>
       </li>
-    </>
+  
   );
 }
 export default Card;

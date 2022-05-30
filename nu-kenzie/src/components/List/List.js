@@ -114,7 +114,7 @@ function List({
       <ul id="lista">
         <li id="semLançamento">Você ainda não possui nenhum lançamento</li>
         <li>
-          <img alt="Sem transações" src={noCard} />
+          <img  id="noTransition" alt="Sem transações" src={noCard} />
         </li>
       </ul>
     </div>
