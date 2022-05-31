@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 #logoEscuro {
   height: 20px;
@@ -29,17 +28,28 @@
   justify-content: center;
 }
 
-@media(max-width:912px){
-  #appMain{
+@media (max-width: 1205px) {
+  #Header {
+    width: 115vh;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  #logout {
+    margin-left: 200px;
+  }
+
+#logoEscuro{
+  margin-right: 300px;
+}
+
+  #appMain {
     flex-direction: column;
   }
-  #Header{
-    width: 100vh;
-  }
-  #aside{
+  #aside {
     display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100vh;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
   }
 }

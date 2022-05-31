@@ -47,7 +47,7 @@ body {
   background: #e34981;
 }
 
-@media(max-width:780px){
+@media(max-width:1005px){
   #TemplateImage{
     display: none;
   }

@@ -58,7 +58,7 @@
   margin-bottom: 35px;
 }
 
-@media(max-width:912px){
+@media(max-width:1205px){
   #areaFiltros {
     flex-direction: column;
     width: 100vh;
