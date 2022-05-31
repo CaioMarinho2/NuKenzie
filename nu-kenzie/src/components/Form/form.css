@@ -126,3 +126,10 @@
   font-size: 14px;
   color: #212529;
 }
+
+
+@media(max-width:1205px){
+  #aside{
+    margin-right: 0px;
+  }
+}
