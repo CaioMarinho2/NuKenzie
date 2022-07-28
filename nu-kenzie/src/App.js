@@ -37,8 +37,6 @@ function App() {
   }
 
 
-
-
   function Filtrotodos() {
     setListTransactions(listTransactions2);
   }
